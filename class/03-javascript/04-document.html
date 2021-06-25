@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>dom돔 연습</title>
+    <script>
+        function aaa(){
+            document.getElementById("qqq").innerText = "반갑습니다"
+        }
+        function counter(){
+            const count = Number(document.getElementById("www").innerText) + 1
+            document.getElementById("www").innerText= count
+        }
+        function bbb(){
+            document.getElementById("asdf").setAttribute("disabled", "true")
+        }
+    </script>
+</head>
+<body>
+    <div id="qqq" >안녕하세요</div>
+    <button onclick="aaa()">클릭</button>
+
+    <div id="www">0</div>
+    <button onclick="counter()">더하기+1</button>
+
+    <br /><br />
+
+    <button onclick="bbb()" >인증번호 전송</button>
+    <button id="asdf" >인증완료</button>
+</body>
+</html>
